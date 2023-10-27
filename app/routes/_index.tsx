@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-
+import Facebook from "../assets/icons/icons8-facebook (1).svg";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -10,7 +10,21 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-    <h1 className="bg-red-400">Hola</h1>
+      <main>
+        <header >
+          <nav>
+            <ul>
+              <li>Tratamiento Integral</li>
+              <li>Realiza un Test</li>
+              <li>Blog</li>
+              <li>Podcast</li>
+              <li>¿Hablamos?</li>
+            </ul>
+          </nav>
+
+          <img src={Facebook} alt="icon-face" />
+        </header>
+      </main>
     </>
   );
 }
