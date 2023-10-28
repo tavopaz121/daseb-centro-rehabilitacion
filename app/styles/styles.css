@@ -1,0 +1,13 @@
+header {
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav li:hover {
+  color: rebeccapurple;
+  border-bottom: 1px solid rgb(54, 22, 87);
+}

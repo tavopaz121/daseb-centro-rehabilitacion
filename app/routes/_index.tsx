@@ -1,29 +1,54 @@
 import type { MetaFunction } from "@remix-run/node";
-import Facebook from "../assets/icons/icons8-facebook (1).svg";
+
+import logo from "~/assets/imgs/logo.png";
+import banner from "~/assets/imgs/banner-rehabilitacion.webp";
+
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "DASEB - Centro de Rehabilitación" },
+    {
+      name: "description",
+      content:
+        "DASEB: Tu centro de rehabilitación de enfermería de confianza. Ofrecemos cuidados especializados y apoyo durante tu recuperación. Nuestro equipo de enfermeros expertos está aquí para ayudarte a sanar y recuperarte. Descubre la atención dedicada que mereces en DASEB.",
+    },
   ];
 };
 
 export default function Index() {
   return (
     <>
+      <header className="flex w-full justify-between items-center bg-slate-50">
+        <figure>
+          <img
+            src={logo}
+            alt="DASEB - Centro de Rehabilitación"
+            className="logo"
+          />
+        </figure>
+        <nav className="nav">
+          <ul className="flex w-full gap-8 px-10 font-bold">
+            <li>
+              <a href="">Inicio</a>
+            </li>
+            <li>
+              <a href="">Nosotros</a>
+            </li>
+            <li>
+              <a href="">Servicios</a>
+            </li>
+            <li>
+              <a href="">Especialidades</a>
+            </li>
+            <li>
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main>
-        <header >
-          <nav>
-            <ul>
-              <li>Tratamiento Integral</li>
-              <li>Realiza un Test</li>
-              <li>Blog</li>
-              <li>Podcast</li>
-              <li>¿Hablamos?</li>
-            </ul>
-          </nav>
-
-          <img src={Facebook} alt="icon-face" />
-        </header>
+        <section>
+          <img src={banner} alt="" className="w-full h-[500px] object-cover" />
+        </section>
       </main>
     </>
   );
