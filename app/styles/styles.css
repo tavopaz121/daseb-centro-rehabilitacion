@@ -11,3 +11,17 @@ header {
   color: rebeccapurple;
   border-bottom: 1px solid rgb(54, 22, 87);
 }
+
+.banner {
+  position: relative;
+}
+
+.banner p {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+  width: 50%;
+  font-weight: bold;
+  margin-left: 5rem;
+  margin-bottom: 8rem;
+}

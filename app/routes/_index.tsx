@@ -19,11 +19,13 @@ export default function Index() {
     <>
       <header className="flex w-full justify-between items-center bg-slate-50">
         <figure>
-          <img
-            src={logo}
-            alt="DASEB - Centro de Rehabilitación"
-            className="logo"
-          />
+          <a href="">
+            <img
+              src={logo}
+              alt="DASEB - Centro de Rehabilitación"
+              className="logo"
+            />
+          </a>
         </figure>
         <nav className="nav">
           <ul className="flex w-full gap-8 px-10 font-bold">
@@ -46,8 +48,12 @@ export default function Index() {
         </nav>
       </header>
       <main>
-        <section>
-          <img src={banner} alt="" className="w-full h-[500px] object-cover" />
+        <section className="banner">
+          <img src={banner} alt="" className="w-full h-[550px] object-cover" />
+          <p>
+            ¡BIENVENIDOS! EN NUESTRA CLÍNICA TE BRINDAMOS ATENCIÓN MÉDICA DE
+            CALIDAD, EN EL MOMENTO QUE MÁS LO NECESITES
+          </p>
         </section>
       </main>
     </>
