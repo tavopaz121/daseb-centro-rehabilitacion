@@ -8,23 +8,39 @@ header {
   width: 200px;
 }
 
-.nav li:hover {
-  color: rebeccapurple;
-  border-bottom: 1px solid rgb(54, 22, 87);
-}
-
 .banner {
   position: relative;
 }
 
-.banner p {
+.hero__banner {
   position: absolute;
   bottom: 0;
   font-size: 2rem;
-  width: 50%;
+  width: vw;
   font-weight: bold;
-  margin-left: 5rem;
-  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(3, 39, 37, 0.45);
+  height: 100%;
+}
+
+.banner p {
+  margin-top: 8rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+
+.hero__btn {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 0.4rem 2rem;
 }
 
 
@@ -32,5 +48,12 @@ header {
   .show__menu {
     display: none;
     display: block;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+    margin-top: 2rem;
   }
 }

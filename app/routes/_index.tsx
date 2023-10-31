@@ -78,10 +78,17 @@ export default function Index() {
       <main>
         <section className="banner">
           <img src={banner} alt="" className="w-full h-[550px] object-cover" />
-          <p>
-            ¡BIENVENIDOS! EN NUESTRA CLÍNICA TE BRINDAMOS ATENCIÓN MÉDICA DE
-            CALIDAD, EN EL MOMENTO QUE MÁS LO NECESITES
-          </p>
+          <div className="hero__banner">
+            <p>
+              ¡BIENVENIDOS! EN NUESTRA CLÍNICA TE BRINDAMOS ATENCIÓN MÉDICA DE
+              CALIDAD, EN EL MOMENTO QUE MÁS LO NECESITES
+            </p>
+            <button className="relative inline-flex items-center justify-center mt-5 mr-2 overflow-hidden text-xl text-white font-semibold rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200">
+              <span className="relative px-8 py-2.5 transition-all ease-in duration-75 bg-transparent rounded-md group-hover:bg-opacity-0">
+                Agendar cita por whatsapp
+              </span>
+            </button>
+          </div>
         </section>
       </main>
     </>
