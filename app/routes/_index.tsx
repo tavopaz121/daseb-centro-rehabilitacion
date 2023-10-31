@@ -41,7 +41,7 @@ export default function Index() {
       <header className="shadow-md py-2 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
         <div className="flex flex-wrap items-center justify-between gap-5 relative">
           <a href="">
-            <img src={logo} alt="logo" className="w-[180px]" />
+            <img src={logo} alt="logo" className="w-[180px] max-md:w-[120px]" />
           </a>
           <button
             className="lg:hidden ml-7"
