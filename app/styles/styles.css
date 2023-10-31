@@ -31,5 +31,6 @@ header {
 @media (max-width: 1024px) {
   .show__menu {
     display: none;
+    display: block;
   }
 }

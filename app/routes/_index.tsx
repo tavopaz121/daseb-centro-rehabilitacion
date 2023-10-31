@@ -58,7 +58,7 @@ export default function Index() {
             </svg>
           </button>
           <ul
-            className={`flex lg:space-x-5 max-lg:space-y-2 max-lg:block max-lg:w-full ${
+            className={`flex lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:w-full ${
               showMenu && "show__menu"
             }`}>
             {navLinks.map((link) => (
