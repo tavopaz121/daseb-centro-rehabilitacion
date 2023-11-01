@@ -4,6 +4,13 @@ import logo from "~/assets/imgs/logo.png";
 import banner from "~/assets/imgs/banner.jpg";
 import { useState } from "react";
 
+import servicio1 from "~/assets/imgs/servicio-de-ciguria.png";
+import servicio2 from "~/assets/imgs/clinica-heridas-estomas-01-1.png";
+import servicio3 from "~/assets/imgs/servicio-de-hospitalizacion.png";
+import servicio4 from "~/assets/imgs/servicio-de-laboratorio-de-analisis-clinicos.png";
+import servicio5 from "~/assets/imgs/servicio-de-terapia-interna.png";
+import servicio6 from "~/assets/imgs/servicio-de-clinica-de-diabetes.png";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "DASEB - Centro de Rehabilitación" },
@@ -89,8 +96,8 @@ export default function Index() {
 
           <div className="absolute inset-0 block bg-black/60 md:hidden"></div>
 
-          <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-            <div className="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left mt-8">
+          <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl max-md:mt-5">
+            <div className="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left mt-8 hero">
               <h2 className="text-3xl font-bold uppercase leading-tight text-white sm:text-4xl lg:text-5xl">
                 Centro de Rehabilitación Daseb
               </h2>
@@ -99,44 +106,199 @@ export default function Index() {
                 calidad, en el momento que más lo necesites.
               </p>
 
-              <form action="#" method="POST" className="mt-8 lg:mt-12">
-                <div className="flex flex-col items-center sm:flex-row sm:justify-center">
-                  <div className="flex-1 w-full min-w-0 px-4 sm:px-0">
-                    <div className="relative text-gray-400 focus-within:text-gray-600">
-                      <label htmlFor="email" className="sr-only"></label>
-                      <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg
-                          className="w-5 h-5"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                          />
-                        </svg>
-                      </div>
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Enter email address"
-                        className="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
-                        required
-                      />
+              <button
+                type="button"
+                className="inline-block rounded-lg text-white w-full mt-8 py-2.5 border-2 border-primary-100 px-6 pb-[6px] text-base font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-neutral-500 hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200"
+                data-te-ripple-init>
+                Agendar cita por whatsapp
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+          <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                Nuestros servicios
+              </h2>
+              <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+                Ofrecemos un tratamiento completo de alto nivel
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="overflow-hidden bg-white rounded shadow">
+                <div className="p-8">
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 w-12 h-auto"
+                      src={servicio1}
+                      alt=""
+                    />
+                    <div className="ml-5 mr-auto">
+                      <p className="text-xl font-semibold text-black">Gmail</p>
                     </div>
                   </div>
-
-                  <button
-                    type="submit"
-                    className="inline-flex items-center justify-center flex-shrink-0 w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-blue-700 focus:bg-blue-700">
-                    Get instant access
-                  </button>
+                  <p className="text-base leading-relaxed text-gray-600 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
                 </div>
-              </form>
+              </div>
+
+              <div className="overflow-hidden bg-white rounded shadow">
+                <div className="p-8">
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 w-12 h-auto"
+                      src={servicio2}
+                      alt=""
+                    />
+                    <div className="ml-5 mr-auto">
+                      <p className="text-xl font-semibold text-black">Slack</p>
+                    </div>
+                  </div>
+                  <p className="text-base leading-relaxed text-gray-600 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+
+              <div className="overflow-hidden bg-white rounded shadow">
+                <div className="p-8">
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 w-12 h-auto"
+                      src={servicio3}
+                      alt=""
+                    />
+                    <div className="ml-5 mr-auto">
+                      <p className="text-xl font-semibold text-black">
+                        Shopify
+                      </p>
+                    </div>
+                    <svg
+                      className="hidden w-5 h-5 text-blue-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-base leading-relaxed text-gray-600 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+
+              <div className="overflow-hidden bg-white rounded shadow">
+                <div className="p-8">
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 w-12 h-auto"
+                      src={servicio4}
+                      alt=""
+                    />
+                    <div className="ml-5 mr-auto">
+                      <p className="text-xl font-semibold text-black">
+                        Intercom
+                      </p>
+                    </div>
+                    <svg
+                      className="hidden w-5 h-5 text-blue-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-base leading-relaxed text-gray-600 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+
+              <div className="overflow-hidden bg-white rounded shadow">
+                <div className="p-8">
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 w-12 h-auto"
+                      src={servicio5}
+                      alt=""
+                    />
+                    <div className="ml-5 mr-auto">
+                      <p className="text-xl font-semibold text-black">
+                        Twitter
+                      </p>
+                    </div>
+                    <svg
+                      className="hidden w-5 h-5 text-blue-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-base leading-relaxed text-gray-600 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+
+              <div className="overflow-hidden bg-white rounded shadow">
+                <div className="p-8">
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 w-12 h-auto"
+                      src={servicio6}
+                      alt=""
+                    />
+                    <div className="ml-5 mr-auto">
+                      <p className="text-xl font-semibold text-black">Sketch</p>
+                    </div>
+                    <svg
+                      className="hidden w-5 h-5 text-blue-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-base leading-relaxed text-gray-600 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

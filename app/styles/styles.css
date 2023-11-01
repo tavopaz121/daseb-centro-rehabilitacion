@@ -8,42 +8,6 @@ header {
   width: 200px;
 }
 
-.banner {
-  position: relative;
-}
-
-.hero__banner {
-  position: absolute;
-  bottom: 0;
-  font-size: 2rem;
-  width: vw;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(3, 39, 37, 0.45);
-  height: 100%;
-}
-
-.banner p {
-  margin-top: 8rem;
-  font-size: 2rem;
-  text-align: center;
-  width: 80%;
-  color: white;
-}
-
-.hero__btn {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: white;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  padding: 0.4rem 2rem;
-}
-
-
 @media (max-width: 1024px) {
   .show__menu {
     display: none;
@@ -55,5 +19,11 @@ header {
     text-align: center;
     width: 90%;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    margin-top: 4rem;
   }
 }
