@@ -120,41 +120,26 @@ export default function Index() {
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
             <div className=" w-full">
               <h2 className="text-3xl text-center font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
-                Justificaión
+                Misión
               </h2>
 
               <div className="mt-10">
                 <p className="text-base text-black  md:text-3xl mt-4">
-                  Teniendo en cuenta el presente proyecto sobre el diseño de un
-                  programa de salud (clínica), debe decirse que la motivación
-                  principal radica en la necesidad que ha evidenciado algunas
-                  entidades, las cuales carecen de estos servicios.
+                  Contribuir a la salud y bienestar de las personas, poniendo a
+                  su disposición servicios profesionales de máxima calidad, de
+                  una forma cercana y accesible con personal de enfermería
+                  capacitado, generando bienestar y seguridad a nuestros
+                  usuarios y a sus familias con la calidez de nuestro talento
+                  humano.
                 </p>
                 <p className="text-base text-black  md:text-3xl mt-4">
-                  La rehabilitación es el cuidado que se recibe para recuperar,
-                  mantener o mejorar las capacidades necesarias para la vida
-                  diaria. Estas capacidades pueden ser físicas.
+                  Ofrecer a nuestros pacientes una correcta exploración,
+                  tratamiento y seguimiento, siempre poniendo al paciente en el
+                  centro de nuestras actuaciones.
                 </p>
                 <p className="text-base text-black  md:text-3xl mt-4">
-                  Cualquier persona puede necesitar rehabilitación en algún
-                  momento de su vida, como consecuencia de una lesión,
-                  intervención quirúrgica o enfermedad, o porque su capacidad de
-                  movilidad o funcionamiento de una o varias extremidades o
-                  procesos, se ha reducido con la edad.
-                </p>
-                <p className="text-base text-black  md:text-3xl mt-4">
-                  De acuerdo con el Censo de Población y Vivienda 2020, en
-                  México hay 6,179,890 personas con algún tipo de discapacidad,
-                  lo que representa 4.9 % de la población total del país, del
-                  cual 53% son mujeres y 47% son hombres.
-                </p>
-                <p className="text-base text-black  md:text-3xl mt-4">
-                  El mismo determinó que en Veracruz viven 214,300 personas con
-                  discapacidad física, considerado a personas que tienen
-                  bastante dificultad para realizar actividades cotidianas como
-                  caminar, subir o bajar, o simplemente no puede realizarlas.
-                  Específicamente en Orizaba se contaba con 3430 personas con
-                  discapacidad, mientras que en Córdoba había 4090.
+                  Contribuir a minimizar o retrasar los efectos discapacitantes
+                  de enfermedades crónicas.
                 </p>
               </div>
             </div>
