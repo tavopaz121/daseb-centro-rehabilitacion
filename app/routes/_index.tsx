@@ -178,34 +178,6 @@ export default function Index() {
               <div>
                 <div className="relative flex items-center justify-center mx-auto">
                   <img
-                    src={servicio1}
-                    className="w-[150px] h-[150px]"
-                    alt="Cirujia"></img>
-                </div>
-
-                <p className="mt-4 text-base text-gray-600">
-                  Calidad quirúrgica. Procedimientos rutinarios y especializados
-                  con cuidado excepcional para tu bienestar total.
-                </p>
-              </div>
-
-              <div>
-                <div className="relative flex items-center justify-center mx-auto">
-                  <img
-                    src={servicio2}
-                    className="w-[150px] h-[150px]"
-                    alt="Cirujia"></img>
-                </div>
-                <p className="mt-4 text-base text-gray-600">
-                  Recibe atención especializada en heridas y estomas. Nuestro
-                  equipo experto está comprometido con tu recuperación y
-                  bienestar.
-                </p>
-              </div>
-
-              <div>
-                <div className="relative flex items-center justify-center mx-auto">
-                  <img
                     src={servicio3}
                     className="w-[150px] h-[150px]"
                     alt="Cirujia"></img>
@@ -244,20 +216,6 @@ export default function Index() {
                 <p className="mt-4 text-base text-gray-600">
                   Terapia intensiva 24/7. Cuidados especializados para tu
                   recuperación total.
-                </p>
-              </div>
-
-              <div>
-                <div className="relative flex items-center justify-center mx-auto">
-                  <img
-                    src={servicio6}
-                    className="w-[150px] h-[150px]"
-                    alt="Cirujia"></img>
-                </div>
-
-                <p className="mt-4 text-base text-gray-600">
-                  Control experto para la diabetes en nuestra clínica
-                  especializada. Tu bienestar es nuestra prioridad.
                 </p>
               </div>
             </div>
