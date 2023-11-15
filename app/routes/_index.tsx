@@ -139,8 +139,8 @@ export default function Index() {
                 </div>
 
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Calidad quirúrgica. Procedimientos rutinarios y especializados
+                  con cuidado excepcional para tu bienestar total.
                 </p>
               </div>
 
@@ -152,8 +152,9 @@ export default function Index() {
                     alt="Cirujia"></img>
                 </div>
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Recibe atención especializada en heridas y estomas. Nuestro
+                  equipo experto está comprometido con tu recuperación y
+                  bienestar.
                 </p>
               </div>
 
@@ -166,8 +167,9 @@ export default function Index() {
                 </div>
 
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Brindamos servicios de hospitalización con atención dedicada y
+                  compasiva. Nuestro equipo médico experto garantiza un entorno
+                  seguro para tu recuperación completa.
                 </p>
               </div>
 
@@ -180,8 +182,9 @@ export default function Index() {
                 </div>
 
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Descubre precisión en salud con nuestro laboratorio de
+                  análisis clínicos. Resultados confiables y atención centrada
+                  en tu bienestar.
                 </p>
               </div>
 
@@ -194,8 +197,8 @@ export default function Index() {
                 </div>
 
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Terapia intensiva 24/7. Cuidados especializados para tu
+                  recuperación total.
                 </p>
               </div>
 
@@ -208,8 +211,8 @@ export default function Index() {
                 </div>
 
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Control experto para la diabetes en nuestra clínica
+                  especializada. Tu bienestar es nuestra prioridad.
                 </p>
               </div>
             </div>
