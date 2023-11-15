@@ -178,6 +178,20 @@ export default function Index() {
               <div>
                 <div className="relative flex items-center justify-center mx-auto">
                   <img
+                    src={servicio2}
+                    className="w-[150px] h-[150px]"
+                    alt="Cirujia"></img>
+                </div>
+                <p className="mt-4 text-base text-gray-600">
+                  Recibe atención especializada en heridas y estomas. Nuestro
+                  equipo experto está comprometido con tu recuperación y
+                  bienestar.
+                </p>
+              </div>
+
+              <div>
+                <div className="relative flex items-center justify-center mx-auto">
+                  <img
                     src={servicio3}
                     className="w-[150px] h-[150px]"
                     alt="Cirujia"></img>
@@ -187,21 +201,6 @@ export default function Index() {
                   Brindamos servicios de hospitalización con atención dedicada y
                   compasiva. Nuestro equipo médico experto garantiza un entorno
                   seguro para tu recuperación completa.
-                </p>
-              </div>
-
-              <div>
-                <div className="relative flex items-center justify-center mx-auto">
-                  <img
-                    src={servicio4}
-                    className="w-[150px] h-[150px]"
-                    alt="Cirujia"></img>
-                </div>
-
-                <p className="mt-4 text-base text-gray-600">
-                  Descubre precisión en salud con nuestro laboratorio de
-                  análisis clínicos. Resultados confiables y atención centrada
-                  en tu bienestar.
                 </p>
               </div>
 
