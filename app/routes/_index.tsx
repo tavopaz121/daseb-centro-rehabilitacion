@@ -151,7 +151,7 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className="relative">
+              <div className="relative max-md:scale-75 max-md:-mt-[5.5rem]">
                 <img
                   className="absolute inset-x-0 bottom-0 -mb-20 -translate-x-1/2 left-1/2"
                   src="https://static.vecteezy.com/system/resources/previews/010/857/182/original/organic-blob-shape-png.png"
@@ -168,7 +168,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-10 bg-white sm:py-16 lg:py-12">
+        <section className="py-10 bg-white sm:py-0 lg:py-12 max-md:-mt-[3rem]">
           <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
             <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
