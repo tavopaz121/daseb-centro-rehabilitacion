@@ -7,6 +7,7 @@ import { useState } from "react";
 import servicio2 from "~/assets/imgs/clinica-heridas-estomas-01-1.png";
 import servicio3 from "~/assets/imgs/servicio-de-hospitalizacion.png";
 import servicio5 from "~/assets/imgs/servicio-de-terapia-interna.png";
+import Footer from "~/components/Footer/Footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -277,6 +278,8 @@ export default function Index() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
