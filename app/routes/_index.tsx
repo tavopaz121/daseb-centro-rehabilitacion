@@ -9,6 +9,7 @@ import Hero from "~/components/Hero/Hero";
 import Naturaleza from "~/components/Naturaleza/Naturaleza";
 import Team from "~/components/Team/Team";
 import Mision from "~/components/Mision/Mision";
+import Vision from "~/components/Vision/Vision";
 
 export const meta: MetaFunction = () => {
   return [
@@ -96,6 +97,7 @@ export default function Index() {
         </section>
 
         <Mision />
+        <Vision />
       </main>
 
       <Footer />
