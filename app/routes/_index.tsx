@@ -4,12 +4,9 @@ import logo from "~/assets/imgs/logo.png";
 import banner from "~/assets/imgs/banner.jpg";
 import { useState } from "react";
 
-import servicio1 from "~/assets/imgs/servicio-de-ciguria.png";
 import servicio2 from "~/assets/imgs/clinica-heridas-estomas-01-1.png";
 import servicio3 from "~/assets/imgs/servicio-de-hospitalizacion.png";
-import servicio4 from "~/assets/imgs/servicio-de-laboratorio-de-analisis-clinicos.png";
 import servicio5 from "~/assets/imgs/servicio-de-terapia-interna.png";
-import servicio6 from "~/assets/imgs/servicio-de-clinica-de-diabetes.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -43,6 +40,7 @@ const navLinks = [
 
 export default function Index() {
   const [showMenu, setShowMenu] = useState(false);
+
   return (
     <>
       <header className="shadow-md py-1 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
@@ -116,37 +114,110 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-10 bg-gray-50 sm:py-16 lg:py-24 w-full">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
-            <div className=" w-full">
-              <h2 className="text-3xl text-center font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
-                Misión
-              </h2>
+        <section className="py-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 mt-5">
+          <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div className="grid items-center grid-cols-1 md:grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                  ¡Bienvenido a la recuperación que mereces!
+                </h2>
+                <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+                  En DASEB, nos dedicamos apasionadamente a ayudar a las
+                  personas a superar las limitaciones físicas y a recuperar su
+                  calidad de vida. Nuestro centro, ubicado en la pintoresca
+                  localidad de Motzorongo, en Tezonapa, es un faro de esperanza
+                  para aquellos que buscan la rehabilitación integral.
+                </p>
+                <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+                  Creemos en el poder del apoyo familiar. No solo trabajamos
+                  contigo, sino que también proporcionamos información valiosa a
+                  tus seres queridos para facilitar un manejo ambulatorio
+                  exitoso en casa.
+                </p>
 
-              <div className="mt-10">
-                <p className="text-base text-black  md:text-3xl mt-4">
-                  Contribuir a la salud y bienestar de las personas, poniendo a
-                  su disposición servicios profesionales de máxima calidad, de
-                  una forma cercana y accesible con personal de enfermería
-                  capacitado, generando bienestar y seguridad a nuestros
-                  usuarios y a sus familias con la calidez de nuestro talento
-                  humano.
+                <p className="mt-4 text-xl text-gray-600 md:mt-8">
+                  <span className="relative inline-block">
+                    <span className="absolute inline-block w-full bottom-0.5 h-2 bg-blue-300"></span>
+                    <span className="relative"> Tienes alguna duda? </span>
+                  </span>
+                  <br className="block sm:hidden" />
+                  Habla con nosotros{" "}
+                  <a
+                    href="tel:2713175582"
+                    title=""
+                    className="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">
+                    271 317 5582
+                  </a>
                 </p>
-                <p className="text-base text-black  md:text-3xl mt-4">
-                  Ofrecer a nuestros pacientes una correcta exploración,
-                  tratamiento y seguimiento, siempre poniendo al paciente en el
-                  centro de nuestras actuaciones.
+              </div>
+
+              <div className="relative">
+                <img
+                  className="absolute inset-x-0 bottom-0 -mb-20 -translate-x-1/2 left-1/2"
+                  src="https://static.vecteezy.com/system/resources/previews/010/857/182/original/organic-blob-shape-png.png"
+                  alt=""
+                />
+
+                <img
+                  className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+                  src="https://univer.com.mx/wp-content/uploads/2022/12/Enfermera-PNG.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 bg-white sm:py-16 lg:py-12">
+          <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
+              <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
+                Lydia Hall: Pionera en Enfermería y
+                <span className="relative inline-block">
+                  <span className="absolute inline-block w-full h-2 bg-blue-300 bottom-1.5"></span>
+                  <span className="relative"> Transformadora de Cuidados </span>
+                </span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-4 md:grid-cols-2 gap-x-4">
+              <div>
+                <img
+                  className="w-full mx-auto sm:max-w-xs"
+                  src="https://s3.amazonaws.com/ogden_images/www.mariettatimes.com/images/2017/12/14233056/HALL-Lydia-tle.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Fue una estadounidense destacada en la enfermería con
+                  especialidad en la rehabilitación, en la salud preventiva y en
+                  la salud pública.
+                </h3>
+                <p className="mt-4 text-lg text-gray-700">
+                  Afirmó que la atención individual se podía ver en tres áreas
+                  diferentes: cuidado (el cuerpo), corazón (la persona) y cura
+                  (la enfermedad). Esta teoría sirvió para poner los cimientos
+                  de la enfermería moderna, en la que las enfermeras usan el
+                  pensamiento crítico y el conocimiento médico, en lugar de solo
+                  seguir órdenes médicas.
                 </p>
-                <p className="text-base text-black  md:text-3xl mt-4">
-                  Contribuir a minimizar o retrasar los efectos discapacitantes
-                  de enfermedades crónicas.
+                <p className="mt-4 text-lg text-gray-700">
+                  El objetivo del paciente es recuperarse, esta es contribución
+                  a la teoría de la enfermería, para el desarrollo y la
+                  utilización de esta filosofía. Gracias a esto, se reconoció a
+                  las enfermeras como profesionales y se les animó a que
+                  contribuyeran a favorecer los resultados del paciente. La
+                  teoría de Lydia Hall es la primera en priorizar la importancia
+                  de la persona que necesita cuidado.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-10 bg-white sm:py-16 lg:py-24">
+        <section className="py-10 bg-white sm:py-16 lg:py-12">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[4rem]">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
