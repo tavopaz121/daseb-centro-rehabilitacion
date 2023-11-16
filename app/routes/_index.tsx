@@ -152,7 +152,7 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className="relative max-md:scale-75 max-md:-mt-[5.5rem]">
+              <div className="relative max-md:scale-75 max-md:-mt-[3rem]">
                 <img
                   className="absolute inset-x-0 bottom-0 -mb-20 -translate-x-1/2 left-1/2"
                   src="https://static.vecteezy.com/system/resources/previews/010/857/182/original/organic-blob-shape-png.png"
