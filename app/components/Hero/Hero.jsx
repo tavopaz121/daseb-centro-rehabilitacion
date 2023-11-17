@@ -31,7 +31,12 @@ export default function Hero() {
             type="button"
             className="inline-block rounded-lg text-white w-full mt-8 py-2.5 border-2 border-primary-100 px-6 pb-[6px] text-base font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-neutral-500 hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200"
             data-te-ripple-init>
-            Agendar cita por whatsapp
+            <a
+              href="https://wa.me/+522713175582?text=Hola,%20estoy%20interesado%20en%20solicitar%20sus%20servicios.%20¿Podrían%20proporcionarme%20más%20información?"
+              target="_blank"
+              rel="noreferrer">
+              Agendar cita por whatsapp
+            </a>
           </button>
         </div>
       </div>
