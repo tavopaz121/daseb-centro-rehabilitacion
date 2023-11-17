@@ -2,7 +2,9 @@ import banner from "~/assets/imgs/banner.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+    <section
+      className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32"
+      id="inicio">
       <div className="absolute inset-0">
         <img
           className="w-full object-contain max-md:object-cover h-full md:object-left md:scale-150 md:origin-top-left"

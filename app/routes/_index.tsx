@@ -10,6 +10,8 @@ import Naturaleza from "~/components/Naturaleza/Naturaleza";
 import Team from "~/components/Team/Team";
 import Mision from "~/components/Mision/Mision";
 import Vision from "~/components/Vision/Vision";
+import Valores from "~/components/Valores/Valores";
+import Contacto from "~/components/Contacto/Contacto";
 
 export const meta: MetaFunction = () => {
   return [
@@ -32,7 +34,14 @@ export default function Index() {
 
         <Team />
 
-        <section className="py-10 bg-white sm:py-16 lg:py-12">
+        <Mision />
+        <Vision />
+
+        <Valores />
+
+        <section
+          className="py-10 bg-gray-50 sm:py-16 lg:py-12"
+          id="especialidades">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[4rem]">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
@@ -96,8 +105,7 @@ export default function Index() {
           </div>
         </section>
 
-        <Mision />
-        <Vision />
+        <Contacto />
       </main>
 
       <Footer />

@@ -3,19 +3,19 @@ import logo from "~/assets/imgs/logo.png";
 const navLinks = [
   {
     name: "inicio",
-    target: "#home",
+    target: "#inicio",
   },
   {
     name: "nosotros",
-    target: "#home",
+    target: "#nosotros",
   },
   {
     name: "especialidades",
-    target: "#home",
+    target: "#especialidades",
   },
   {
     name: "contacto",
-    target: "#home",
+    target: "#contacto",
   },
 ];
 export default function Header() {

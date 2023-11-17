@@ -12,7 +12,11 @@ export default function Mision() {
               alt=""
             />
             <div className="pl-12 pr-6">
-              <img className="relative h-[500px] object-cover" src={misionImg} alt="" />
+              <img
+                className="relative h-[500px] object-cover"
+                src={misionImg}
+                alt=""
+              />
             </div>
             <div className="absolute left-0 pr-12 bottom-8 xl:bottom-20">
               <div className="max-w-xs bg-blue-500 rounded-lg sm:max-w-md xl:max-w-md">

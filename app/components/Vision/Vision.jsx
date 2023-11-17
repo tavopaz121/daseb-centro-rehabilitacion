@@ -1,8 +1,8 @@
-import misionImg from "~/assets/imgs/mison.jpg";
+import misionImg from "~/assets/imgs/vison.jpg";
 
 export default function Vision() {
   return (
-    <section className="py-10 bg-white sm:py-16 lg:py-24">
+    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
           <div className="2xl:pl-16">
@@ -18,20 +18,16 @@ export default function Vision() {
               profesionales con licenciatura, posgrado o diplomado, certificados
               a través de ReTHUS, asegurando un servicio de primer nivel y
               consolidando nuestra posición como referentes en el campo de la
-              rehabilitación a nivel mundial. Nos esforzamos por superar las expectativas y
-              marcar la pauta en la excelencia del cuidado y la recuperación.
+              rehabilitación a nivel mundial. Nos esforzamos por superar las
+              expectativas y marcar la pauta en la excelencia del cuidado y la
+              recuperación.
             </p>
           </div>
 
           <div className="relative lg:mb-12">
-            <img
-              className="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg"
-              alt=""
-            />
             <div className="pl-12 pr-6">
               <img
-                className="relative h-[500px] object-cover"
+                className="relative h-[400px] object-cover"
                 src={misionImg}
                 alt=""
               />
