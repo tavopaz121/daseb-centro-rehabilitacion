@@ -1,25 +1,37 @@
 import { useState } from "react";
 import logo from "~/assets/imgs/logo.png";
-const navLinks = [
-  {
-    name: "inicio",
-    target: "#inicio",
-  },
-  {
-    name: "nosotros",
-    target: "#nosotros",
-  },
-  {
-    name: "especialidades",
-    target: "#especialidades",
-  },
-  {
-    name: "contacto",
-    target: "#contacto",
-  },
-];
-export default function Header() {
+import { scrollToSection } from "~/functions/scrollTo";
+
+export default function Header({
+  inicioRef,
+  nosotrosRef,
+  especialidadesRef,
+  contactoRef,
+}) {
   const [showMenu, setShowMenu] = useState(false);
+
+  const navLinks = [
+    {
+      name: "inicio",
+      target: "#inicio",
+      ref: inicioRef,
+    },
+    {
+      name: "nosotros",
+      target: "#nosotros",
+      ref: nosotrosRef,
+    },
+    {
+      name: "especialidades",
+      target: "#especialidades",
+      ref: especialidadesRef,
+    },
+    {
+      name: "contacto",
+      target: "#contacto",
+      ref: contactoRef,
+    },
+  ];
   return (
     <header className="shadow-md py-1 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
       <div className="flex flex-wrap items-center justify-between gap-5 relative">
@@ -49,7 +61,8 @@ export default function Header() {
               className="max-lg:border-b max-lg:py-2 px-3 max-lg:rounded"
               key={link.name}>
               <a
-                href={link.target}
+                href="/"
+                onClick={(evt) => scrollToSection(evt, link.ref, 1500, 20)}
                 className="lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px] capitalize">
                 {link.name}
               </a>

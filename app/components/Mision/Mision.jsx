@@ -3,7 +3,10 @@ import misionImg from "~/assets/imgs/mison.jpg";
 export default function Mision() {
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div
+        className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"
+        data-aos="fade-left"
+        data-aos-delay="500">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
           <div className="relative lg:mb-12">
             <img
@@ -33,7 +36,10 @@ export default function Mision() {
             </div>
           </div>
 
-          <div className="2xl:pl-16">
+          <div
+            className="2xl:pl-16"
+            data-aos="fade-right"
+            data-aos-delay="1000">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
               Misión
             </h2>

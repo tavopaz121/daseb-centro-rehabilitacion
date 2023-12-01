@@ -1,7 +1,10 @@
 export default function Naturaleza() {
   return (
     <>
-      <section className="py-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 mt-5">
+      <section
+        className="py-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 mt-5"
+        data-aos="fade-left"
+        data-aos-delay="500">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center grid-cols-1 md:grid-cols-2">
             <div>
@@ -38,7 +41,10 @@ export default function Naturaleza() {
               </p>
             </div>
 
-            <div className="relative max-md:scale-75 max-md:-mt-[3rem]">
+            <div
+              className="relative max-md:scale-75 max-md:-mt-[3rem]"
+              data-aos="fade-right"
+              data-aos-delay="1000">
               <img
                 className="absolute inset-x-0 bottom-0 -mb-20 -translate-x-1/2 left-1/2"
                 src="https://static.vecteezy.com/system/resources/previews/010/857/182/original/organic-blob-shape-png.png"
@@ -57,7 +63,10 @@ export default function Naturaleza() {
 
       <section className="py-10 bg-white sm:py-0 lg:py-12 max-md:-mt-[3rem]">
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
+          <div
+            className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center"
+            data-aos="fade-in"
+            data-aos-delay="500">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
               Lydia Hall: Pionera en Enfermería y
               <span className="relative inline-block">
@@ -67,7 +76,10 @@ export default function Naturaleza() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-4 md:grid-cols-2 gap-x-4">
+          <div
+            className="grid grid-cols-1 mt-8 md:mt-20 gap-y-4 md:grid-cols-2 gap-x-4"
+            data-aos="fade-left"
+            data-aos-delay="500">
             <div>
               <img
                 className="w-full mx-auto sm:max-w-xs"
@@ -76,7 +88,7 @@ export default function Naturaleza() {
               />
             </div>
 
-            <div>
+            <div data-aos="fade-right" data-aos-delay="1000">
               <h3 className="text-lg font-semibold text-gray-900">
                 Fue una estadounidense destacada en la enfermería con
                 especialidad en la rehabilitación, en la salud preventiva y en

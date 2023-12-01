@@ -1,6 +1,8 @@
 import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "./styles/tailwind.css";
 import styles from "./styles/styles.css";
+import aosStyles from "aos/dist/aos.css";
+import AOS from "aos";
 
 import {
   Links,
@@ -10,10 +12,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { useEffect } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: aosStyles },
 
   {
     rel: "icon",
@@ -36,6 +40,14 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      easing: "ease-out-sine",
+    });
+  });
+
   return (
     <html lang="es">
       <head>

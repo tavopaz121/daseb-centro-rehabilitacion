@@ -1,6 +1,10 @@
-export default function Contacto() {
+export default function Contacto({ forwardedRef }) {
   return (
-    <section className="py-10 bg-white sm:py-16 lg:py-20" id="contacto">
+    <section
+      ref={forwardedRef}
+      className="py-10 bg-white sm:py-16 lg:py-20"
+      data-aos="fade-up"
+      data-aos-delay="500">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 xl:gap-x-20">
           <div className="flex items-start">

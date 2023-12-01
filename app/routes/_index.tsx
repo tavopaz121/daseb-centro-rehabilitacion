@@ -12,6 +12,7 @@ import Mision from "~/components/Mision/Mision";
 import Vision from "~/components/Vision/Vision";
 import Valores from "~/components/Valores/Valores";
 import Contacto from "~/components/Contacto/Contacto";
+import { useRef } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -25,14 +26,24 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const heroRef = useRef(null);
+  const nosotrosRef = useRef(null);
+  const especialidadesRef = useRef(null);
+  const contactoRef = useRef(null);
+
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <Naturaleza />
+      <Header
+        inicioRef={heroRef}
+        nosotrosRef={nosotrosRef}
+        especialidadesRef={especialidadesRef}
+        contactoRef={contactoRef}
+      />
+      <main className="overflow-hidden">
+        <Hero forwardedRef={heroRef} />
+        <Naturaleza  />
 
-        <Team />
+        <Team forwardedRef={nosotrosRef}/>
 
         <Mision />
         <Vision />
@@ -40,14 +51,21 @@ export default function Index() {
         <Valores />
 
         <section
+          ref={especialidadesRef}
           className="py-10 bg-gray-50 sm:py-16 lg:py-12"
           id="especialidades">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[4rem]">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+              <h2
+                className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+                data-aos="fade-up"
+                data-aos-delay="500">
                 Nuestros servicios
               </h2>
-              <p className="max-w-full mx-auto mt-4 text-base leading-relaxed text-gray-600">
+              <p
+                className="max-w-full mx-auto mt-4 text-base leading-relaxed text-gray-600"
+                data-aos="fade-up"
+                data-aos-delay="1000">
                 Te ayudamos a recuperar, mantener y mejorar tus habilidades
                 esenciales. Nuestro enfoque integral minimiza los efectos de
                 enfermedades crónicas, ofreciendo estrategias de autogestión y
@@ -59,7 +77,7 @@ export default function Index() {
 
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
-              <div>
+              <div data-aos="fade-up" data-aos-delay="1300">
                 <div className="relative flex items-center justify-center mx-auto">
                   <img
                     src={servicio2}
@@ -73,7 +91,7 @@ export default function Index() {
                 </p>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-delay="1600">
                 <div className="relative flex items-center justify-center mx-auto">
                   <img
                     src={servicio3}
@@ -88,7 +106,7 @@ export default function Index() {
                 </p>
               </div>
 
-              <div>
+              <div data-aos="fade-up" data-aos-delay="1900">
                 <div className="relative flex items-center justify-center mx-auto">
                   <img
                     src={servicio5}
@@ -105,7 +123,7 @@ export default function Index() {
           </div>
         </section>
 
-        <Contacto />
+        <Contacto forwardedRef={contactoRef} />
       </main>
 
       <Footer />

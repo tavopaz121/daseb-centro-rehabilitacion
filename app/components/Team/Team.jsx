@@ -4,15 +4,24 @@ import avatar3 from "../../assets/imgs/avatar3.jpg";
 import avatar4 from "../../assets/imgs/avatar4.jpg";
 import avatar5 from "../../assets/imgs/avatar5.jpg";
 
-export default function Team() {
+export default function Team({ forwardedRef }) {
   return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24" id="nosotros">
+    <section
+      className="py-10 bg-gray-50 sm:py-16 lg:py-24"
+      id="nosotros"
+      ref={forwardedRef}>
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          <h2
+            className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            data-aos="fade-in"
+            data-aos-delay="500">
             Conoce Nuestro Equipo de Profesionales
           </h2>
-          <p className="max-w-full mx-auto mt-4 text-base leading-relaxed text-gray-600">
+          <p
+            className="max-w-full mx-auto mt-4 text-base leading-relaxed text-gray-600"
+            data-aos="fade-in"
+            data-aos-delay="1000">
             Creemos en el poder de la atención personalizada y especializada.
             Con orgullo presentamos a nuestro equipo de enfermeras y
             profesionales de la salud, cuya dedicación y experiencia son
@@ -21,7 +30,7 @@ export default function Team() {
         </div>
 
         <div className="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-0">
-          <div>
+          <div data-aos="fade-up" data-aos-delay="1200">
             <img
               className="object-cover mx-auto rounded-lg w-28 h-28"
               src={avatar1}
@@ -37,7 +46,7 @@ export default function Team() {
 
           <div className="hidden lg:block"></div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="1400">
             <img
               className="object-cover mx-auto rounded-lg w-28 h-28"
               src={avatar2}
@@ -53,7 +62,7 @@ export default function Team() {
 
           <div className="hidden lg:block"></div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="1600">
             <img
               className="object-cover mx-auto rounded-lg w-28 h-28"
               src={avatar3}
@@ -69,7 +78,7 @@ export default function Team() {
 
           <div className="hidden lg:block"></div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="1800">
             <img
               className="object-cover mx-auto rounded-lg w-28 h-28"
               src={avatar4}
@@ -85,7 +94,7 @@ export default function Team() {
 
           <div className="hidden lg:block"></div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="2000">
             <img
               className="object-cover mx-auto rounded-lg w-28 h-28"
               src={avatar5}
